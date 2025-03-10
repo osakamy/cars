@@ -48,6 +48,10 @@
     background-image: url(./img/background.svg);
 }
 
+.content {
+    padding-bottom: 154px;
+}
+
 .main__title {
     padding-top: 105px;
     font-size: 80px;
@@ -118,7 +122,6 @@
     font-size: 60px;
     line-height: 70px;
     margin-bottom: 40px;
-    margin-top: 154px;
 }
 
 .car__park--image {
