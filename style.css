@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width:1200px) {
+        padding: 0 1rem;
+    }
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.links {
+    display: flex;
+    gap: 115px;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 100%;
+    cursor: pointer;
+}
+
+
+.line{
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.container__car {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(./background.svg);
+}
+
+.main__title {
+    padding-top: 105px;
+    font-size: 80px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    line-height: 110%;
+
+    @media (max-width: 1200px) {
+        text-align: center;
+    }
+}
+
+.main__info {
+    font-size: 16px;
+    margin-bottom: 40px;
+    max-width: 450px;
+    width: 100%;
+    color: black;
+
+    @media (max-width:1200px) {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+}
+
+.main__button{
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 20px 53px;
+    color: white;
+    background-color: black;
+
+    @media (max-width:1200px) {
+        margin: 0 auto;
+        transform: translate(10, -50%);
+        left: 37%;
+    }
+}
+
+.main__button:hover {
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.main__button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: black;
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.main__button:hover::after {
+    transform: scaleX(1);
+    background-color: none;
+}
+
+.car__park--title {
+    padding-top: 100px;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 40px;
+    margin-top: 154px;
+}
+
+.car__park--image {
+    width: 384px;
+    height: 246px;
+    margin-bottom: 15px;
+}
+
+.car__park--list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+}
+
+.car__list--content {
+    display: flex;
+    flex-direction: column;
+}
+
+.car__info {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 36px;
+    text-align: center;
+    padding-bottom: 17px;
+}
+
+.car__drive--image {
+    width: 34.33px;
+    height: 34.11px;
+    margin-bottom: 11px;
+}
+
+.car__drive {
+    margin-bottom: 3px;
+}
+
+.car__engine--image {
+    width: 34px;
+    height: 34px;
+    margin-bottom: 11px;
+}
+
+.car__number-of-seats {
+    width: 34px;
+    height: 34px;
+    margin-bottom: 11px;
+}
+
+.car__characteristics {
+    display: flex;
+    justify-content: center;
+    column-gap: 53px;
+}
+
+
+.car__characteristics--content {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 13px;
+}
+
+.car__park--button {
+    position: relative;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: black;
+    padding: 15px 122px;
+    margin-bottom: 40px;
+}
+
+.car__park--button:hover {
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.car__park--button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: black;
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.car__park--button:hover::after {
+    transform: scaleX(1);
+    background-color: none;
+}
+
+.price__title {
+    font-size: 60px;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+
+.price__info {
+    font-size: 16px;
+    line-height: 130%;
+    color: rgba(93, 93, 95, 1);
+    margin-bottom: 60px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    max-width: 344px;
+    width: 100%;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.data__input {
+    font-size: 16px;
+    line-height: 21px;
+    padding: 22px 18px;
+}
+
+.price__button {
+    position: relative;
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    margin-bottom: 121px;
+}
+
+.price__button:hover {
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.price__button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: black;
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.price__button:hover::after {
+    transform: scaleX(1);
+    background-color: none;
+}
+
+.content {
+    position: relative;
+}
+
+.content__image {
+    position: absolute;
+    top: -81px;
+    right: -190px;
+}
+
+.footer {
+    padding-top: 25px;
+    padding-bottom: 26px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__privacy {
+    font-size: 15px;
+    line-height: 100%;
+}
